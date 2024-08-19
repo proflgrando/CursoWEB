@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table, th, td {
+        border: 3px solid black;
+        }
+
+        table{
+            border-spacing: 5px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Template</title>
+    <title>Revisão HTML</title>
 </head>
 <body>
     <h1>Exemplo de h1</h1> 
@@ -69,7 +78,60 @@
 
     </p>
 
+    <table style="width: 100%;">
+        <caption>Um exemplo de tabela</caption>
+        <tr>
+            <th>nomes</th>
+            <th>sobrenomes</th>
+            <th>time</th>
+        </tr> 
+        <tr>
+            <td>Leonardo</td>    
+            <td>Grando</td>
+            <td>XV de Piracicaba</td>
+        </tr>
+        <tr>
+            <td>Celsão</td>    
+            <td>Corinthiano</td>
+            <td>Palmeiras</td>
+        </tr>
+    </table>
 
+    <table style="width: 100%;">
+        <caption>Um outro exemplo de tabela</caption>
+        <tr>
+            <th>nomes</th>
+            <th colspan="2">email</th>
+        </tr> 
+        <tr>
+            <td>Leonardo</td>    
+            <td>l.g@kd.cm</td>
+            <td>l.g2@kd.cm</td>
+        </tr>
+        <tr>
+            <td>Celsão</td>    
+            <td>vaicurintia@g.com</td>
+            <td>vaiquinze@g.com</td>
+        </tr>
+    </table>
+
+    <table style="width: 100%;">
+        <caption>Um outro outro exemplo de tabela</caption>
+        <tr>
+            <th>nomes</th>
+            <th colspan="2">email</th>
+        </tr> 
+        <tr>
+            <td rowspan = 2>Leonardo</td>    
+            <td>l.g@kd.cm</td>
+            <td>l.g2@kd.cm</td>
+        </tr>
+        <tr>
+             
+            <td>vaicurintia@g.com</td>
+            <td>vaiquinze@g.com</td>
+        </tr>
+    </table>
 
 </body>
 </html>
